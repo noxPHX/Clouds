@@ -1,0 +1,76 @@
+body {
+  background: linear-gradient(165deg, #527785 0%, #527785 100%);
+  overflow: hidden;
+}
+
+#sky {
+  display: grid;
+  grid-template-columns: 50vw 50vw 1fr;
+  grid-template-rows: 50vh 50vh 1fr;
+}
+
+.cloud-1 {
+  position: relative;
+  left: -20vw;
+  top: -40vh;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.cloud-1 > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40vw;
+  height: 40vh;
+  border-radius: 50%;
+}
+
+#back-1 {
+  filter: url(#filter-back-1);
+  box-shadow: 300px 300px 30px -20px #fff;
+}
+
+#mid-1 {
+  filter: url(#filter-mid-1);
+  box-shadow: 300px 340px 70px -60px rgba(158, 168, 179, 0.5);
+}
+
+#front-1 {
+  filter: url(#filter-front-1);
+  box-shadow: 300px 370px 60px -100px rgba(0, 0, 0, 0.3);
+}
+
+.cloud-2 {
+  position: relative;
+  left: -20vw;
+  top: -40vh;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.cloud-2 > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40vw;
+  height: 40vh;
+  border-radius: 50%;
+}
+
+#back-2 {
+  filter: url(#filter-back-2);
+  box-shadow: 300px 300px 30px -20px #fff;
+}
+
+#mid-2 {
+  filter: url(#filter-mid-2);
+  box-shadow: 300px 340px 70px -60px rgba(158, 168, 179, 0.5);
+}
+
+#front-2 {
+  filter: url(#filter-front-2);
+  box-shadow: 300px 370px 60px -100px rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=style.css.map */

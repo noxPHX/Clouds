@@ -1,0 +1,63 @@
+<html>
+
+	<head>
+	
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
+	
+		<svg width="0" height="0">
+		
+			<!-- Back Layer -->
+			<filter id="filter-back-1">
+				<feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" seed="500" />
+				<feDisplacementMap  in="SourceGraphic" scale="170" />
+			</filter>
+			<!-- Middle Layer -->
+			<filter id="filter-mid-1">
+				<feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="500" />
+				<feDisplacementMap  in="SourceGraphic" scale="150" />
+			</filter>
+			<!-- Front Layer -->
+			<filter id="filter-front-1">
+				<feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="500" />
+				<feDisplacementMap  in="SourceGraphic" scale="130" />
+			</filter>
+		</svg>
+	
+		<svg width="0" height="0">
+		
+			<!-- Back Layer -->
+			<filter id="filter-back-2">
+				<feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" seed="600" />
+				<feDisplacementMap  in="SourceGraphic" scale="170" />
+			</filter>
+			<!-- Middle Layer -->
+			<filter id="filter-mid-2">
+				<feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="600" />
+				<feDisplacementMap  in="SourceGraphic" scale="150" />
+			</filter>
+			<!-- Front Layer -->
+			<filter id="filter-front-2">
+				<feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="600" />
+				<feDisplacementMap  in="SourceGraphic" scale="130" />
+			</filter>
+		</svg>
+		
+		<div id="sky">
+		
+			<div class="cloud-1">
+				<div id="back-1"></div>
+				<div id="mid-1"></div>
+				<div id="front-1"></div>
+			</div>
+		
+			<div class="cloud-2">
+				<div id="back-2"></div>
+				<div id="mid-2"></div>
+				<div id="front-2"></div>
+			</div>
+		</div>
+	</body>
+</html>

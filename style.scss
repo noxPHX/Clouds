@@ -1,0 +1,48 @@
+body {
+	background: linear-gradient(165deg, #527785 0%, #527785 100%);
+	overflow: hidden;
+}
+
+#sky {
+	display: grid;
+	grid-template-columns: 50vw 50vw 1fr;
+	grid-template-rows: 50vh 50vh 1fr;
+}
+
+$width: 40vw;
+$height: 40vh;
+
+@for $i from 1 through 2 {
+
+	.cloud-#{$i} {
+		position: relative;
+		left: - $width / 2;
+		top: - $height;
+		grid-column: $i;
+		grid-row: 1;
+	}
+
+	.cloud-#{$i} > * {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: $width;
+		height: $height;
+		border-radius: 50%;
+	}
+
+	#back-#{$i} {
+		filter: url(#filter-back-#{$i});
+		box-shadow: 300px 300px 30px -20px #fff;
+	}
+
+	#mid-#{$i} {
+		filter: url(#filter-mid-#{$i});
+		box-shadow: 300px 340px 70px -60px rgba(158, 168, 179, 0.5);
+	}
+
+	#front-#{$i} {
+		filter: url(#filter-front-#{$i});
+		box-shadow: 300px 370px 60px -100px rgba(0, 0, 0, 0.3);
+	}
+}
